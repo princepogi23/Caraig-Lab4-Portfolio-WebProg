@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CARAIG LAB 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#skillsSection">Skills</a>
+    <a href="#contact">Contact</a>
+    <a href="#message">Message Me</a>
+</div>
+
+<!-- MAIN RESUME CONTAINER -->
+<div class="resume">
+
+    <!-- LEFT PROFILE -->
+    <div class="profile" id="home">
+        <img src="[pic/prince.jpg" alt="Profile Picture">
+        <h2>Prince Jess C. Caraig</h2>
+        <p id="jobTitle">Student Web Developer</p>
+
+        <button id="themeBtn">Toggle Dark Mode</button>
+        <button id="editJobBtn">Edit Job Title</button>
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="content">
+
+        <!-- Greeting inserted by JS -->
+
+        <section id="about">
+            <h3>About Me</h3>
+            <p>
+                I am Prince Jess Caraig, a second-year BS Information Technology student from NU Fairview.
+                I enjoy web development and improving my skills through projects and hands-on learning.
+                I am currently enrolled in WEBPROG, where I am building my foundation in front-end development.
+            </p>
+        </section>
+
+        <section id="contact">
+            <h3>Contact</h3>
+            <p><strong>Phone:</strong> 0967 405 9429</p>
+            <p><strong>Email:</strong> caraigpc@students.nu-fairview.edu.ph</p>
+            <p><strong>Address:</strong> 1155 Durian Street, Caloocan City</p>
+        </section>
+
+        <section id="education">
+            <h3>Education</h3>
+            <p>Better Children of St. Clare Montessori Center (Elementary)</p>
+            <p>Better Children of St. Clare Montessori Center (High School)</p>
+            <p>National University Fairview (College)</p>
+        </section>
+
+        <section id="work">
+            <h3>Work Experience</h3>
+            <p>Concentrix – Chat Support Agent (Nike Account)</p>
+        </section>
+
+        <section id="skillsSection">
+            <div class="skills-header">
+                <h3>Skills</h3>
+                <button id="toggleSkillsBtn">Hide</button>
+            </div>
+
+            <div class="skill-box">
+                <ul class="skills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Basic UI Design</li>
+                    <li>Team Leadership</li>
+                    <li>Prompt Engineering</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="message">
+            <h3>Message Me</h3>
+            <form onsubmit="return validateForm()">
+                <input type="text" id="nameField" placeholder="Full Name">
+                <input type="email" id="emailField" placeholder="Email">
+                <textarea id="msgBox" maxlength="200" placeholder="Your message"></textarea>
+                <p>Characters left: <span id="counter">200</span></p>
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+
+    </div>
+</div>
+
+<footer>
+    <p>© 2025 Prince Jess C. Caraig — <span id="dateDisplay"></span></p>
+</footer>
+
+</body>
+</html>
